@@ -1,19 +1,32 @@
 package com.webtest.springboot.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import java.io.Serializable;
 import java.util.Objects;
+import javax.persistence.*;
 
-public class User {
+@Entity
+@Table(name = "User")
+public class User implements Serializable {
 
+    @Id
     private String id;
+    
+    @Column(name = "firstname")
     private String firstName;
+    
+    @Column(name = "lastname")
     private String lastName;
+    
+    @Column(name = "username")
     private String userName;
     
     @JsonIgnore
+    @Column(name = "password")
     private String plainTextPassword;
     
     @JsonIgnore
+    @Column(name = "hashedpassword")
     private String hashedPassword;
 
     public User() {}

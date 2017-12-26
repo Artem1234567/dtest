@@ -1,6 +1,0 @@
-com\webtest\springboot\errors\UserAlreadyExistsException.class
-com\webtest\springboot\SpringBootRestApiApp.class
-com\webtest\springboot\service\UserRepository.class
-com\webtest\springboot\controller\RestApiController.class
-com\webtest\springboot\model\User.class
-com\webtest\springboot\service\UserRepositoryImpl.class

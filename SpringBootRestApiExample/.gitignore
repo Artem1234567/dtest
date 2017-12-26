@@ -1,7 +1,0 @@
-*.class
-*.log
-*.jar
-dependency-reduced-pom.xml
-/.idea/*
-/target/*
-*.iml
